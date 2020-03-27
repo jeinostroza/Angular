@@ -1,0 +1,27 @@
+<div class="container text-center">
+    <h1>Prueba de Routing</h1>
+</div>
+<div class="container">
+    <h2>Opciones de ruta</h2>
+    <ul>
+        <li>
+            <a [routerLink]="['/']">Abrir Home</a>
+        </li>
+        <li>
+            <a [routerLink]="['/componente1']">Componente 1</a>
+        </li>
+        <li>
+            <a [routerLink]="['/componente2']">Componente 2</a>
+        </li>
+        <li>
+            <a [routerLink]="['/componente2', 7000]">Pasar 1 parametro</a>
+        </li>
+        <li>
+            <a [routerLink]="['/componente2', 900, 1200]">Pasar 2 parametros</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
